@@ -1,0 +1,17 @@
+def square(n):
+'''take in a number n, return it's square'''
+   print(n**2)
+
+square(5)
+ #or 
+
+print(square.__doc__)
+
+#class ke ander docstring
+
+a=int(input("enter any value between 5 and 9:"))
+if (a<5 or a>9):
+  raise ValueError("Value shall be between 5 and 9")
+else:
+  print(a)
+
