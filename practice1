@@ -1,0 +1,51 @@
+def factorial(n):
+ if (n==0 or n==1):
+   return 1
+ else:
+  return n*factorial(n-1)
+
+print(factorial(3))
+print(factorial(6))
+
+#SETS
+# are unordered collection of data items, they store multiple items in a single variable. Set items are separated by command are enclosed within only brackets.
+#you cannot change the items of the set ones are created
+
+info= {"Carla", 19, False, 5.9}
+print (info)
+
+for value in info:
+  print (value)
+
+  #SETS METHODS: JOINING,APPEND,UNION,DIFF,ETC
+S1={1,2,5,6}
+S2={3,6,7}
+x=S1.union(S2)#union gives the combined elements of both the sets
+print(x)
+y=S1.intersection(S2) #intersection gives the commonelemtns in both the sets
+print(y)
+z=S1.difference(S2)#difference gives the elements of S1 which are not in S2
+print(z)
+S1.update(S2)#update adds the elements of S2 to S1
+print(S1)
+S1.remove(2)#removes the element 2 from S1
+print(S1)
+S1.discard(2)#discards the element 2 from S1
+print(S1)
+S1.pop()#removes the last element from S1
+print(S1)
+S1.clear()#clears all the elements from S1
+print(S1)
+S1.add(8)#adds the element 8 to S1
+print(S1)
+S1.update([4,5,6,7])#adds these elements to S1
+print(S1)
+S1.difference_update(S2)#removes the elements of S2 from S1
+print(S1)
+S1.symmetric_difference(S2)#gives the elements which are not common in both the sets
+print(S1)
+S1.symmetric_difference_update(S2)#gives the elements which are not common in both the sets and update S1
+print(S1)
+S1.isdisjoint(S2)
+print(S1)
+
