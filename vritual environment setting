@@ -1,0 +1,12 @@
+#Virtual Environment
+#a vritual environment is a  tool used to isolate specific pytthon environments on a single machine, allowing you to work on  multiple projects with different dependencies and packages without conflicts. 
+#This can be especially useful when you are working on projects that have conflicting package versions or pacakges that are not available for a particular Python version.
+#example:
+
+#create a virtual enviornment
+
+python-m  venv myenv #create a vitual environment
+source myenv/bin/activate #activate the virtual environment on macOS and Linux 
+myenv/scripts/activate #activate the enivornment for windows
+to deactivate:  deactivate
+
