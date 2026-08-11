@@ -1,0 +1,16 @@
+#Using + and * with Sequences
+#To concatenate multiple copies of the same sequence, multiply it by an integer.
+#Again, a new sequence is created:
+#Both + and * always create a new object, and never change their operands.
+
+l=[1,2,3,3,4,5]
+l*5
+#Building Lists of Lists
+#Example 2-14. A list with three lists of length 3 can represent a tic-tac-toe board
+board=[['_']*3 for i in range(3)]
+print(board)
+print(board[1][2]) #Place a mark in row 1, column 2, and check the result.
+
+# ()= tuples, is immutable so any changes in it cahnges the id, which means doesn't change itself.. creates new obj.
+#TypeError: 'tuple' object does not support item assignment
+
