@@ -1,0 +1,49 @@
+def handle_command(self, message):
+    match message:
+        case ['BEEPER', frequency, times]:
+            self.beep(times,frequency)
+        case  ['NECK', angle]:
+            self.rotate_neck(angle)
+        case ['LED', ident, intensity]:
+            self.leds[ident].set_brightness(ident, intensity)
+        case ['LED', ident, red, green, blue]:
+            self.leds[ident].set_color(ident, red, green, blue)
+        case _:
+            raise InvalidCommand(message)
+        
+
+
+
+from collections import deque 
+dq= deque( range(10), maxlen=10)
+dq
+
+from collections import deque 
+dq= deque( range(10), maxlen=10)
+
+dq.rotate(3)
+print(dq)
+
+
+from collections import deque 
+dq= deque( range(10), maxlen=10)
+
+dq.rotate(-4)
+print(dq)
+
+dq.extend([11,12,13])
+print(dq)
+
+#ASSIGNING SLICES
+#Mutable sequences can be grafted, excised, and otherwise modified in place using lice notation on the lefthand side of an assignment statement or as the target of a del
+
+#he next few examples give an idea of the power of this notation:
+
+l=list(range(10))
+print(l)
+
+l = [1, 2, 3]
+>>> l * 5
+[1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]
+>>> 5 * 'abcd'
+'abcdabcdabcdabcdabcd'
